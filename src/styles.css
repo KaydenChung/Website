@@ -139,9 +139,9 @@ section {
     transition: .5s ease;
     background-color: #008CBA;
 }
-.logo:hover .logo-overlay {
+.logo:hover .logo-overlay, .logo:focus .logo-overlay, logo:active .logo-overlay {
     opacity: 1;
-} 
+}
 .logo-text {
     color: white;
     font-size: 3vw;
@@ -182,8 +182,5 @@ section {
     }
     .logo-text {
         font-size: 5vw;
-    }
-    .logo:focus .logo-overlay {
-        opacity: 1;
     }
 }
