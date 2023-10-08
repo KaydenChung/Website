@@ -183,7 +183,7 @@ section {
     .logo-text {
         font-size: 5vw;
     }
-    .logo:active .logo-overlay {
+    .logo:focus .logo-overlay {
         opacity: 1;
     }
 }
