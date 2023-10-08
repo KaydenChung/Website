@@ -14,11 +14,10 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // Toggling logo overlay when clicked
 document.addEventListener("DOMContentLoaded", function () {
-    const logos = document.querySelectorAll(".logo");
-    logos.forEach((logo) => {
-        const logoOverlay = logo.querySelector(".logo-overlay");
-        logo.addEventListener("click", function () {
-            logoOverlay.classList.toggle("active");
+    const logoOverlays = document.querySelectorAll(".logo-overlay");
+    logoOverlays.forEach((overlay) => {
+        overlay.addEventListener("click", function () {
+            overlay.classList.toggle("active");
         });
     });
 });
