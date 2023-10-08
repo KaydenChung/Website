@@ -1,7 +1,7 @@
 /* Body Properties */
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 body {
-    background: linear-gradient(135deg, #560bad, #3a0ca3, #4361ee, #4cc9f0);
+    background: linear-gradient(90deg, #560bad, #3a0ca3, #4361ee, #4cc9f0);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
     height: auto;
