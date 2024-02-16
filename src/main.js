@@ -21,3 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Smooth scroll to toolbox section
+document.addEventListener('DOMContentLoaded', function() {
+    var toolboxLink = document.querySelector('.toolbox-link');
+    toolboxLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        var toolboxSection = document.getElementById('toolbox-section');
+        var toolboxTop = toolboxSection.getBoundingClientRect().top;
+        window.scrollTo({
+            top: window.scrollY + toolboxTop - 350,
+            behavior: 'smooth'
+        });
+    });
+});
