@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title>Kayden's Website</title>
+    <!--Head-->
+    <title>Kayden Chung's Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/KC.png" type="image/x-icon">
     <link rel="stylesheet" href="src/styles.css">
@@ -12,19 +13,20 @@
     <!--Navbar Section-->
     <nav class="navbar">
     <div class="navbar_container">
-
         <div class="navbar_toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-
         <ul class="navbar_menu">
             <li>
                 <a href="https://kaydenchung.com/" class="navbar_items">Home</a>
             </li>
             <li>
                 <a href="#toolbox-section" class="navbar_items toolbox-link">Skills</a>
+            </li>
+            <li>
+                <a href="#projects-section" class="navbar_items projects-link">Projects</a>
             </li>
             <li>
                 <a href="assets/KaydenChungResume.pdf" target ="_blank" class="navbar_items">Resume</a>
@@ -40,7 +42,6 @@
                 </a>
             </li>
         </ul>
-
     </nav>
 
     <!--Main Information-->
@@ -63,39 +64,61 @@
     <section id="toolbox-section">
         <div class="toolbox-container">
             <div class="logo hidden">
-                <img class="square" src="assets/images/toolbox/python.png">
+                <img class="square" src="assets/images/logos/python.png">
                 <div class="logo-overlay">
                     <div class="logo-text">Python</div>
                 </div>
             </div>
             <div class="logo hidden">
-                <img class="square" src="assets/images/toolbox/java.png">
+                <img class="square" src="assets/images/logos/java.png">
                 <div class="logo-overlay">
                     <div class="logo-text">Java</div>
                 </div>
             </div>
             <div class="logo hidden">
-                <img class="square" src="assets/images/toolbox/c.png">
+                <img class="square" src="assets/images/logos/c.png">
                 <div class="logo-overlay">
                     <div class="logo-text">C</div>
                 </div>
             </div>
             <div class="logo hidden">
-                <img class="square" src="assets/images/toolbox/html.png">
+                <img class="square" src="assets/images/logos/html.png">
                 <div class="logo-overlay">
                     <div class="logo-text">HTML</div>
                 </div>
             </div>
             <div class="logo hidden">
-                <img class="square" src="assets/images/toolbox/css.png">
+                <img class="square" src="assets/images/logos/css.png">
                 <div class="logo-overlay">
                     <div class="logo-text">CSS</div>
                 </div>
             </div>
             <div class="logo hidden">
-                <img class="square" src="assets/images/toolbox/javascript.png">
+                <img class="square" src="assets/images/logos/javascript.png">
                 <div class="logo-overlay">
                     <div class="logo-text">Javascript</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <div class="heading">
+        <h2>My Projects 🚀</h2>
+    </div>
+    <section id="projects-section">
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img class="project-screenshot" src="assets/images/TodoListScreenshot.png">
+                <div class="project-details">
+                    <h2>Full Stack Todo List Web App</h2>
+                    <p>Created using React + Vite, this web app utilizes Google Firebase for secure user authentication and real-time database.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/KaydenChung/TodoList" target="_blank" class="project-button">GitHub</a>
+                        <a href="https://kaydenchung.github.io/TodoList/" target="_blank" class="project-button">View Demo</a>
+                    </div>
                 </div>
             </div>
         </div>

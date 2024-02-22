@@ -22,18 +22,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Scroll to Toolbox Section
+// Scroll to Sections
 document.addEventListener('DOMContentLoaded', function() {
+
+    // Scroll to Toolbox Section
     var toolboxLink = document.querySelector('.toolbox-link');
     toolboxLink.addEventListener('click', function(event) {
         event.preventDefault();
         var toolboxSection = document.getElementById('toolbox-section');
         var toolboxTop = toolboxSection.getBoundingClientRect().top;
+        var displacement = window.innerWidth < 800 ? 200 : 350;
         window.scrollTo({
-            top: window.scrollY + toolboxTop - 350,
+            top: window.scrollY + toolboxTop - displacement,
             behavior: 'smooth'
         });
     });
+
+    // Scroll to Projects Section
+    var projectsLink = document.querySelector('.projects-link');
+    projectsLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        var projectsSection = document.getElementById('projects-section');
+        var projectsTop = projectsSection.getBoundingClientRect().top;
+        var displacement = window.innerWidth < 800 ? 200 : 350;
+        window.scrollTo({
+            top: window.scrollY + projectsTop - displacement,
+            behavior: 'smooth'
+        });
+    });
+
 });
 
 // Toggling Mobile Menu

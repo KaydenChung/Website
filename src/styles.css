@@ -10,6 +10,24 @@ body {
     text-align: center;
 }
 
+/* Section Properties */
+section {
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 300px;
+}
+
+/* Font Properties */
+.heading {
+    font-size: 4vw;
+}
+.text {
+    font-size: 3vw;
+}
+
 /* Gradient Background */
 @keyframes gradient {
 	0% {
@@ -23,22 +41,17 @@ body {
 	}
 }
 
-/* Font Properties */
-.heading {
-    font-size: 4vw;
+/* Reveal Animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s;
 }
-.text {
-    font-size: 3vw;
-}
-
-/* Section Properties */
-section {
-    display: flex;
-    justify-content: space-evenly;
-    place-items: center;
-    align-content: center;
-    margin-top: 50px;
-    margin-bottom: 300px;
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
 }
 
 /* NavBar */
@@ -64,16 +77,15 @@ section {
     margin-bottom: 100px;
 }
 .navbar_items {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0rem 3.5rem;
-  height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0rem 3.5rem;
+    height: 100%;
 }
 .navbar_items:hover {
-  color: #4cc9f0;
-  transition: all 0.5s ease;
+    color: #4cc9f0;
 }
 
 /* Main Image Properties */
@@ -96,6 +108,24 @@ section {
     height: 150px;
     width: 150px;
     max-width: 100%;
+}
+@keyframes bounce {
+    0%, 20%, 60%, 80%, 100% {
+        transform: translateY(0px);
+    }
+
+    40% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+}
+.bounce {
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
 
 /* Toolbox Properties */
@@ -130,41 +160,6 @@ section {
 .logo:nth-child(6) {
     transition-delay: 1000ms;
 }
-
-/* Reveal Animation */
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 3s;
-}
-.show {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-}
-
-/* Bounce Animation */
-@keyframes bounce {
-    0%, 20%, 60%, 80%, 100% {
-        transform: translateY(0px);
-    }
-
-    40% {
-        transform: translateY(-50px);
-    }
-
-    50% {
-        transform: translateY(20px);
-    }
-}
-.bounce {
-    animation-name: bounce;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-}
-
-/* Hover Logo Animation */
 .logo-overlay {
     position: absolute;
     border-radius: 30%;
@@ -191,6 +186,42 @@ section {
     text-align: center;
 }
 
+/* Projects Section Properties */
+.projects-container {
+    display: flex;
+    justify-content: space-around;  
+}
+.project-card {
+    background-color: #222831;
+    border-radius: 100px;
+    width: 30%;
+}
+.project-screenshot {
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.project-details {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.project-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.project-button {
+    padding: 1rem 2rem;
+    background-color: #3282B8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+.project-button:hover {
+    background-color: #4cc9f0;
+}
+
 /* Mobile View */
 @media (max-width: 800px) {
     .navbar {
@@ -211,7 +242,6 @@ section {
     }
     .navbar_menu.active {
         top: -50%;
-        transition: all 0.5s ease;
     }
     .navbar_toggle .bar {
         display: block;
@@ -225,7 +255,7 @@ section {
     .navbar_items {
         display: table;
         width: 55%;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
     #mobile-menu {
         margin-top: 10px;
@@ -248,7 +278,29 @@ section {
     }
     .toolbox-container {
         flex-direction: column;
-        margin-bottom: 750px;
+    }
+    .projects-container {
+        flex-direction: column;
+    }
+    .project-card {
+        border-radius: 50px;
+        width: 80%;
+        margin: auto;
+    }
+    .project-screenshot {
+        width: 100%;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .project-details {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .project-buttons {
+        padding: 1rem;
+    }
+    .project-button {
+        padding: 0.5rem 1rem;
     }
     .heading {
         font-size: 8vw;
