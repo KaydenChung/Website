@@ -1,4 +1,4 @@
-// Toggling reveal animation when page is scrolled
+// Toggling Reveal Animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -12,7 +12,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-// Toggling logo overlay when clicked
+// Toggling Logo Overlay
 document.addEventListener("DOMContentLoaded", function () {
     const logoOverlays = document.querySelectorAll(".logo-overlay");
     logoOverlays.forEach((overlay) => {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Smooth scroll to toolbox section
+// Scroll to Toolbox Section
 document.addEventListener('DOMContentLoaded', function() {
     var toolboxLink = document.querySelector('.toolbox-link');
     toolboxLink.addEventListener('click', function(event) {
@@ -34,4 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
+});
+
+// Toggling Mobile Menu
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    var navbarMenu = document.querySelector('.navbar_menu');
+    navbarMenu.classList.toggle('active');
+    this.classList.toggle('is-active');
 });
