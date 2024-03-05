@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
-
     // Scroll to Projects Section
     var projectsLink = document.querySelector('.projects-link');
     projectsLink.addEventListener('click', function (event) {
@@ -50,6 +49,19 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
+    // Scroll to Contact Section
+    var contactLink = document.querySelector('.contact-link');
+    contactLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        var contactSection = document.getElementById('contact-section');
+        console.log(contactSection);
+        var contactTop = contactSection.getBoundingClientRect().top;
+        var displacement = window.innerWidth < 800 ? 200 : 350;
+        window.scrollTo({
+            top: window.scrollY + contactTop - displacement,
+            behavior: 'smooth'
+        });
+    });
 
 });
 
@@ -59,3 +71,4 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
     navbarMenu.classList.toggle('active');
     this.classList.toggle('is-active');
 });
+

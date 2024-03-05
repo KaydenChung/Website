@@ -222,6 +222,70 @@ section {
     background-color: #4cc9f0;
 }
 
+/* Contact Section Properties */
+.contact_container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.contact_box {
+    background: white;
+    padding: 2rem;
+    border-radius: 25px;
+    width: 80%;
+}
+.input-row {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group {
+    flex-basis: 45%;
+}
+.contact-button {
+    margin-top: 50px;
+    padding: 1rem 2rem;
+    border: 0px;
+    background-color: #3282B8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    font-family: 'Shadows Into Light';
+    font-size: 1.5rem;
+}
+label {
+    margin-bottom: 6px;
+    display: block; 
+    color: #3282B8;
+    font-family: 'Shadows Into Light';
+    font-size: 1.5rem;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+    font-family: 'Shadows Into Light';
+    font-size: 1.25rem;
+}
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Shadows Into Light';
+    font-size: 1.25rem;
+}
+
+/* Footer Properties */
+.footer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 /* Mobile View */
 @media (max-width: 800px) {
     .navbar {
@@ -258,7 +322,6 @@ section {
         margin-bottom: 10px;
     }
     #mobile-menu {
-        margin-top: 10px;
         position: absolute;
         top: 25%;
         left: 10%;
@@ -333,3 +396,4 @@ section {
         font-size: 5vw;
     }
 }
+

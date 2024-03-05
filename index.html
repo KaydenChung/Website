@@ -29,6 +29,9 @@
                 <a href="#projects-section" class="navbar_items projects-link">Projects</a>
             </li>
             <li>
+                <a href="#contact-section" class="navbar_items contact-link">Contact</a>
+            </li>
+            <li>
                 <a href="assets/KaydenChungResume.pdf" target ="_blank" class="navbar_items">Resume</a>
             </li>
             <li>
@@ -124,13 +127,53 @@
         </div>
     </section>
 
+    <!--Contact Section-->
+    <div class="heading">
+        <h2>Contact Me 📨</h2>
+    </div>
+    <section id="contact-section">
+        <div class="contact_container">
+            <div class="contact_box">
+                <form id="form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="59c793ad-0c41-4d4c-9db3-3fbb8bb4ff52">
+                    <div class="input-row">
+                        <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="First Doe" required>
+                        </div>
+                        <div class="input-group">
+                        <label>Email</label>
+                        <input name="email" placeholder="john.doe@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                        <label>Phone Number</label>
+                        <input name="phone" placeholder="123-456-7890" required>
+                        </div>
+                        <div class="input-group">
+                        <label>Subject</label>
+                        <input name="subject" placeholder="Job Opportunity" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textArea name="Message" rows="3" placeholder="Your Message" required></textArea> 
+                    </div>
+                    <button class="contact-button"><a>Submit</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!--Thank You-->
-    <section class="hidden">
+    <section class="hidden footer">
         <div class="text">
             <h3>Thanks for visiting</h3>
-            <p>www.kaydenchung.com</p>
+            <p>kaydenchung.com</p>
         </div>
     </section>
 
 </body>
 </html>
+
