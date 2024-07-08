@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Toggling Mobile Menu
 document.getElementById('mobile-menu').addEventListener('click', function() {
-    var navbarMenu = document.querySelector('.navbar_menu');
+    var navbarMenu = document.querySelector('.navbar-menu');
     navbarMenu.classList.toggle('active');
     this.classList.toggle('is-active');
 });
