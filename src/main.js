@@ -37,15 +37,15 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
-    // Scroll to Projects Section
-    var projectsLink = document.querySelector('.projects-link');
-    projectsLink.addEventListener('click', function (event) {
+    // Scroll to Experience Section
+    var experienceLink = document.querySelector('.experience-link');
+    experienceLink.addEventListener('click', function (event) {
         event.preventDefault();
-        var projectsSection = document.getElementById('projects-section');
-        var projectsTop = projectsSection.getBoundingClientRect().top;
+        var experienceSection = document.getElementById('experience-section');
+        var experienceTop = experienceSection.getBoundingClientRect().top;
         var displacement = window.innerWidth < 800 ? 200 : 350;
         window.scrollTo({
-            top: window.scrollY + projectsTop - displacement,
+            top: window.scrollY + experienceTop - displacement,
             behavior: 'smooth'
         });
     });

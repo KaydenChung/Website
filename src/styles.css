@@ -186,6 +186,43 @@ section {
     text-align: center;
 }
 
+/* Experience Section Properties */
+.experience-container {
+    display: flex;
+    justify-content: space-around;  
+}
+.experience-card {
+    background-color: #222831;
+    border-radius: 100px;
+    width: 30%;
+}
+.experience-screenshot {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.experience-details {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.experience-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.experience-button {
+    padding: 1rem 2rem;
+    background-color: #3282B8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+.experience-button:hover {
+    background-color: #4cc9f0;
+}
+
 /* Projects Section Properties */
 .projects-container {
     display: flex;
@@ -198,6 +235,7 @@ section {
 }
 .project-screenshot {
     width: 100%;
+    height: 200px;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
 }
@@ -291,14 +329,12 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
 }
 .gallery-header {
     background-color: #222831;
     border-radius: 50px;
     width: 90%;
-    margin: 40px 0;
-    padding: 40px 20px;
+    padding: 20px 20px;
     text-align: center;
     color: #fff;
     font-size: 3vw;
@@ -315,6 +351,38 @@ textarea {
     max-height: 400px;
     border-radius: 100px;
     margin-bottom: 50px;
+}
+
+/* Report Properties */
+#report-container {
+    display: flex;
+    margin-top: 50px;
+    margin: auto;
+    background-color: #222831;
+    border-radius: 50px;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+}
+.report-header {
+    font-size: 2.5vw;
+    padding-bottom: 350px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.report-header img {
+    border-radius: 30%;
+}
+.report-body {
+    font-size: 1vw;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.report-body a {
+    color: blue;
+    text-decoration: underline;
 }
 
 /* Mobile View */
@@ -373,27 +441,27 @@ textarea {
     .toolbox-container {
         flex-direction: column;
     }
-    .projects-container {
+    .experience-container {
         flex-direction: column;
     }
-    .project-card {
+    .experience-card {
         border-radius: 50px;
         width: 80%;
         margin: auto;
     }
-    .project-screenshot {
+    .experience-screenshot {
         width: 100%;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
     }
-    .project-details {
+    .experience-details {
         padding: 1rem;
         font-size: 1rem;
     }
-    .project-buttons {
+    .experience-buttons {
         padding: 1rem;
     }
-    .project-button {
+    .experience-button {
         padding: 0.5rem 1rem;
     }
     .heading {
@@ -430,5 +498,17 @@ textarea {
         max-height: 125px;
         border-radius: 25px;
     }
+    #report-container {
+        flex-direction: column;
+    }
+    .report-header {
+        padding-bottom: 0;
+    }
+    .report-body {
+        padding-top: 0;
+        font-size: 1.5vw;
+    }
+    .report-header img {
+        width: 75%;
+    }
 }
-
