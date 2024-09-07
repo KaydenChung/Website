@@ -1,5 +1,10 @@
 /* Body Properties */
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(90deg, #222831, #393E46, #3282B8, #BBE1FA);
 	background-size: 250% 250%;
