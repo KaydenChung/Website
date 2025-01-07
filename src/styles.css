@@ -86,7 +86,7 @@ section {
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0rem 3.5rem;
+    padding: 0rem 3rem;
     height: 100%;
 }
 .navbar-items:hover {
@@ -361,7 +361,6 @@ textarea {
 /* Report Properties */
 #report-container {
     display: flex;
-    margin-top: 50px;
     margin: auto;
     background-color: #222831;
     border-radius: 50px;
@@ -369,23 +368,20 @@ textarea {
     text-align: center;
     color: #fff;
 }
-.report-header {
-    font-size: 2.5vw;
-    padding-bottom: 350px;
+.report {
     padding-left: 50px;
     padding-right: 50px;
 }
-.report-header img {
+.report img {
     border-radius: 30%;
 }
-.report-body {
-    font-size: 1vw;
-    text-align: left;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+.report h3 {
+    font-size: 2.5vw;
 }
-.report-body a {
+.report p {
+    font-size: 1.5vw;
+}
+.report a {
     color: blue;
     text-decoration: underline;
 }
@@ -530,14 +526,12 @@ textarea {
     #report-container {
         flex-direction: column;
     }
-    .report-header {
+    .report {
+        font-size: 1.5vw;
+        padding-top: 0;
         padding-bottom: 0;
     }
-    .report-body {
-        padding-top: 0;
-        font-size: 1.5vw;
-    }
-    .report-header img {
+    .report img {
         width: 75%;
     }
 }
