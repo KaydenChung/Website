@@ -133,7 +133,7 @@ const WorkTerm3 = () => {
                 <div>
                   <h4 className="font-semibold mb-3">Technical Skills</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['Excel', 'Python', 'Automation Scripting', 'Project Coordination'].map((skill) => (
+                    {['Excel', 'Python', ,'Power Automate', 'Automation Scripting'].map((skill) => (
                       <Badge key={skill} variant="secondary">{skill}</Badge>
                     ))}
                   </div>
@@ -141,7 +141,7 @@ const WorkTerm3 = () => {
                 <div>
                   <h4 className="font-semibold mb-3">Professional Skills</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['Stakeholder Communication', 'Resource Management', 'Process Optimization'].map((skill) => (
+                    {['Project Coordination', 'Stakeholder Communication', 'Process Optimization'].map((skill) => (
                       <Badge key={skill} variant="outline">{skill}</Badge>
                     ))}
                   </div>
