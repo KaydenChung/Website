@@ -12,7 +12,7 @@ createRoot(document.getElementById("root")!).render(
     enableSystem
     disableTransitionOnChange
   >
-    <BrowserRouter basename="/Website">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </ThemeProvider>
