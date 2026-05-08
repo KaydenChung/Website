@@ -32,7 +32,7 @@ const Navigation = () => {
 
   const handleLinkClick = (href: string) => {
     if (href.startsWith('/#') && location.pathname === '/') {
-      const id = href.substring(2); // remove '/#'
+      const id = href.substring(2);
       const element = document.getElementById(id);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });

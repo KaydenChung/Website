@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery";
 import WorkTerm1 from "./pages/WorkTerm1";
 import WorkTerm2 from "./pages/WorkTerm2";
 import WorkTerm3 from "./pages/WorkTerm3";
+import WorkTerm4 from "./pages/WorkTerm4";
 import NotFound from "./pages/NotFound";
 import ScrollToHash from './components/ScrollToHash';
 
@@ -25,6 +26,7 @@ const App = () => (
         <Route path="/work-term-1" element={<WorkTerm1 />} />
         <Route path="/work-term-2" element={<WorkTerm2 />} />
         <Route path="/work-term-3" element={<WorkTerm3 />} />
+        <Route path="/work-term-4" element={<WorkTerm4 />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </TooltipProvider>

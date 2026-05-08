@@ -8,6 +8,17 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
+      title: 'Software Developer',
+      company: 'Royal Bank of Canada (RBC)',
+      period: 'Winter 2026',
+      location: 'Mississauga, ON',
+      description: 'Supported enterprise software systems through Angular front-end development and secure backend Java/SpringBoot API maintenance.',
+      skills: ['Java/Spring Boot', 'Angular/TypeScript', 'Application Security', 'Agile Development'],
+      reportLink: '/work-term-4',
+      image: '/images/RBC.jpg'
+    },
+    {
+      id: 2,
       title: 'Student Engineering Coordinator',
       company: 'AtkinsRealis',
       period: 'Summer 2025',
@@ -15,10 +26,10 @@ const Experience = () => {
       description: 'Tracked project deliverables using Excel and Python while coordinating with engineering teams and stakeholders like OPG.',
       skills: ['Project Reporting', 'Engineering Coordination', 'Stakeholder Management', 'Python/Excel'],
       reportLink: '/work-term-3',
-      image: '/AtkinsRealis.jpg'
+      image: '/images/AtkinsRealis.jpg'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Support Analyst',
       company: 'Research Services Office',
       period: 'Fall 2024',
@@ -26,10 +37,10 @@ const Experience = () => {
       description: 'Provided technical support and analysis for research operations, helping streamline processes and improve efficiency.',
       skills: ['Technical Support', 'System Configuration', 'Quality Assurance', 'Problem Solving'],
       reportLink: '/work-term-2',
-      image: '/UniversityOfGuelph.jpg'
+      image: '/images/UniversityOfGuelph.jpg'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Research Assistant',
       company: 'Manufactured Ecosystems Project',
       period: 'Summer 2024',
@@ -37,7 +48,7 @@ const Experience = () => {
       description: 'Worked on cutting-edge research in manufactured ecosystems, contributing to innovative solutions in environmental technology.',
       skills: ['Web Development', 'Task Automation', 'Data Analysis', 'Python'],
       reportLink: '/work-term-1',
-      image: '/UniversityOfGuelph.jpg'
+      image: '/images/UniversityOfGuelph.jpg'
     },
   ];
 

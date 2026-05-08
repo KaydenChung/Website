@@ -23,7 +23,7 @@ const Hero = () => {
 
                 <div className="flex items-center justify-center lg:justify-start space-x-3">
                   <p className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl text-muted-foreground font-semibold">
-                    Software Solutioneer
+                    Software Engineer
                   </p>
                   <Settings className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-primary flex-shrink-0" />
                 </div>
@@ -71,7 +71,7 @@ const Hero = () => {
             <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80">
               <div className="absolute inset-0 bg-gradient-hero rounded-full animate-pulse"></div>
               <img
-                src="/ProfilePicture.jpg"
+                src="/images/ProfilePicture.jpg"
                 alt="Kayden Chung"
                 className="relative w-full h-full rounded-full object-cover border-4 border-background shadow-elevated"
               />
